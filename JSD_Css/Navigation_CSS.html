@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Navigation_CSS</title>
+        <style>
+            #parent{
+                border: 2px solid brown;
+                border-radius: 20px;
+                background-color: bisque;
+                min-height: 100px;
+                margin: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                align-content: center;
+                
+            }
+            .child{
+                bottom: 2px solid brown;
+                border-radius: 20px;
+                margin: 10px;
+                background-color: chartreuse;
+                width: 300px;
+                min-height:100px ;
+                text-align: center;
+            }
+            .btn{
+                border:2px solid blue;
+                background-color: lightblue;
+                padding:10px;
+                border-radius: 5px;
+                margin:15px;
+                
+            }
+            a{
+                text-decoration: none;
+            }
+            .btn:hover{
+                border: 2px solid red;
+                background-color: pink;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div class="child">
+                <h1>Hotel_Booking</h1>
+            </div>
+            <div class="child">
+                <button class="btn"><a href="../JSD_Html/Home.html">Home</a></button>
+                <button class="btn"><a href="../JSD_Html/Gallery.html">Gallary</a></button>
+            </div>
+        </div>
+    </body>
+</html>
