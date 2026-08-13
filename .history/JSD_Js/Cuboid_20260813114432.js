@@ -1,0 +1,10 @@
+let l=10,b=5,h=8;
+let v=l*b*h;
+let sa=2*(l*b + b*h + l*h);
+
+document.write("Cuboid</br>");
+document.write("Length : "+l + "</br>");
+document.write("Breath : "+b + "</br>");
+document.write("Height : "+h + "</br>");
+document.write("Volume : "+v + "</br>");
+document.write(" Surface Area : "+ sa+ "</br>");

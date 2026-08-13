@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>Navigation_CSS</title>
+        <style>
+            body{
+                background-color: #8E637F;
+            }
+            #parent{
+                
+                border-radius: 20px;
+                background-color: #255C95;
+                color: white;
+                min-height: 50px;
+                margin: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                align-content: center;
+                
+            }
+            .child{
+                
+                border-radius: 20px;
+                margin: 10px;
+                background-color: #0B2B54;
+                width: 300px;
+                min-height:50px ;
+                text-align: center;
+            }
+            .btn{
+                background-color: #B16527;
+                color: white;
+                padding:10px;
+                border-radius: 10px;
+                margin:15px;
+                
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            .btn:hover{
+                background-color: gold;
+                color: black;
+            }
+            #s1{
+                background-image:url("./hotel_images/finded_imd/") ;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+                height: 100vh;
+                text-align: center;
+                justify-content: center;
+                align-content: center;
+                background-color: rgba(0,0,0,0.5);
+            }
+            #s2{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                
+            }
+            #f1{
+                background-color: #0B2B54;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                padding: 10px;
+                margin: 10px;
+            }
+            
+            .Ip{
+                background-color: whitesmoke;
+                padding: 10px;
+                margin: 10px;
+            }
+            #main{
+                border-radius: 20px;
+                background-color: #255C95;
+                
+                min-height: 50px;
+                margin: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items:center;
+                align-content: center;
+            }
+            .sub{
+                border-radius: 20px;
+                margin: 10px;
+                background-color: #0B2B54;
+                color: white;
+                width: 300px;
+                min-height:50px ;
+                text-align: center;
+            }
+            .a2{
+               text-decoration: none;
+                color: white; 
+                padding:10px;
+                border-radius: 10px;
+                margin:15px;
+                
+            }
+           footer{
+            text-align: center;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div class="child">
+                <h1>Hotel_Booking</h1>
+            </div>
+            <div class="child">
+                <button class="btn"><a href="../JSD_Html/Home.html">Home</a></button>
+                <button class="btn"><a href="../JSD_Html/Gallery.html">Gallary</a></button>
+            </div>
+        </div>
+        <section id="s1"> 
+            <h1>Book_Hotel & Enjoy your Vacation</h1>
+            <p>Luxury Feel <strong>*</strong> Worthable Cost <strong>*</strong> Satisfied </p>
+            <button class="btn">Book_Now</button>
+        </section>
+        <section id="s2">
+            <h1>Registration_Form</h1>
+            <form action="" method="" id="f1">
+                <input class="Ip" type="text" placeholder="Enter the name">
+                <input class="Ip"  type="email" placeholder="Enter your Mail">
+                <input class="Ip"  type="text" placeholder="Enter your Mobile umber">
+                <button class="btn">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <div id="main">
+                <div class="sub">
+                    <h3>Hotel_Booking</h3>
+                    <p>Luxury Feel <strong>*</strong> Worthable Cost <strong>*</strong> Satisfied </p>
+                </div>
+                <div class="sub">
+                    <a href="../JSD_Html/Home.html" class="a2">Home</a>
+                    <a href="../JSD_Html/Gallery.html" class="a2">Gallary</a>
+                </div>
+            </div>
+            <hr>
+            <h4>copyrights@2026</h4>
+        </footer>
+    </body>
+</html>

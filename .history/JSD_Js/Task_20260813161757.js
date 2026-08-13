@@ -1,0 +1,21 @@
+let x1=2,x2=3,y1=4,y2=5;
+let ans=((x2-x1)**2 + (y2-y1)**2)**0.5;
+
+let a=10,b=3,c=5;
+let s=a+b+c;
+let area= s*((s-a)*(s-b)*(s-c))**0.5
+
+document.write("Answer ="+ans+ "</br>");
+document.write("Area = "+area+"</br>");
+document.write("</br>");
+document.write("</br>");
+document.write("</br>");
+
+
+let a = Number(prompt("Enter a value"));
+let b = Number(prompt("Enter b value"));
+document.write(a!=b? "yes" : "no");
+
+let age = Number(prompt("Enter the Age"));
+document.write(a>18? "Eligible" : "Not Eligible" );
+document.write
