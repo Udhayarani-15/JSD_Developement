@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Making</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("Enter the number to check"));
+        document.write("Positve Or Negative finding : ")
+        document.write("</br>");
+        if(num > 0){
+            document.write(num+" Positive");
+        }
+        else if(num < 0){
+            document.write(num+" Negative");
+        }
+        else if ( num == 0){
+            document.write(num+" Neutral")
+        }
+        else{
+            document.write(num+" Not a Number");
+        }
+        document.write("</br>");
+        let value = Number(prompt("Enter the value to check"))
+        document.write("Divisible 3 Or Divisible 5 finding : ")
+        document.write("</br>")
+        if(value%3==0 && value%5==0){
+            document.write(value+" Fizz Buss");
+        }
+        else if(value%3==0){
+            document.write(value+" Fizz");
+        }
+        else if (value%5==0){
+            document.write(value+" buss")
+        }
+        else{
+            document.write("The Given Number "+ value+ "is not divisible by 3 or 5");
+        }
+        document.write("</br>");
+        let day = Number(prompt("Enter the value to check"))
+        document.write("Divisible 3 Or Divisible 5 finding : ")
+        document.write("</br>")
+        if(day==1){
+            document.write(day+" Sunday");
+        }
+        else if(day==2){
+            document.write(day+" Monday");
+        }
+        else if (day==3){
+            document.write(day+" Tuesday")
+        }
+        else if(day==2){
+            document.write(day+" Wednesday");
+        }
+        else if (day==3){
+            document.write(day+" Thrusday")
+        }
+        else if(day==2){
+            document.write(day+" Friday");
+        }
+        else if (day==3){
+            document.write(day+" Saturday")
+        }
+        else{
+            document.write("The Given day "+ value+ "is not divisible by 3 or 5");
+        }
+        
+    </script>
+</body>
+</html>
