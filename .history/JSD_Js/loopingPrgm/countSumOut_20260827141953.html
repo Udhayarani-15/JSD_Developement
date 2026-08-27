@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CountSumOut</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h4>Prime Number</h4>");
+
+      for (let y = 2; y <= 100; y++) {
+        let num = y;
+        let pcount = 0;
+        for (let i = 2; i < num; i++) {
+          if (num % i == 0) {
+            pcount++;
+          }
+        }
+        if (pcount == 0) {
+          document.write(num+"<br>");
+        }
+      }
+       document.write("</br><hr></br>");
+       document.write("<h4>Armstrong Number</h4>");
+       let tot = 0;
+       
+       for (let z = 100; z <= 1000; z++) {
+        let num2 = z;
+        let temp = num2;
+        let sum2 = 0;
+        while (num2 > 0) {
+          let rem2 = num2 % 10;
+          let cube = rem2 * rem2 * rem2;
+          sum2 += cube;
+          num2 = parseInt(num2 / 10);
+        }
+        if (temp == sum2) {
+          tot+=temp;
+          document.write(temp+" is armstrong Number<br><br>");
+        }
+      }
+      document.write("Total Armstrong = "+tot);
+      
+    </script>
+  </body>
+</html>

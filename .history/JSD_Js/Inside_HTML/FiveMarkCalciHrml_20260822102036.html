@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple_Interest_Calci</title>
+  </head>
+
+  <body>
+    <h2>Simple_Interest_Calci</h2>
+    <input type="number" id="ip1" placeholder="Enter Principal" />
+    <br /><br />
+    <input type="number" id="ip2" placeholder="Enter rate" /><br /><br/>
+    <input type="number" id="ip3" placeholder="Enter Time" /><br /><br>
+    <input type="number" id="ip4" placeholder="Enter rate" /><br /><br/>
+    <input type="number" id="ip5" placeholder="Enter rate" /><br /><br/>
+    <button id="ntBtn" onclick="siCalci()">Find_SI</button>
+    <br /><br />
+    <p id="p1"></p>
+
+    <script>
+      function siCalci() {
+        let principal = Number(document.getElementById("ip1").value);
+        let rate = Number(document.getElementById("ip1").value);
+        let time = Number(document.getElementById("ip1").value);
+        let SI = (principal * rate * time) / 100;
+        if (principal != null && rate != null && time != null) {
+          document.getElementById("p1").innerText = "SI Amount = " + SI;
+        } else {
+          document.getElementById("p1").innerText = "Fill All Fields";
+        }
+      }
+    </script>
+  </body>
+</html>

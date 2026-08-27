@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+</head>
+<body>
+    <script>
+        let initial_amount=10000;
+        
+        document.write("Initital Amount = "+initial_amount+"</br>");
+        let choice =Number(prompt("Enter The Action Do You Want 1.Check Balance 2.Withdraw 3.Deposite"));
+        switch(choice){
+            case 1:
+                document.write("Balance Amount = "+initial_amount+"</br>");
+                break;
+            case 2:
+                let Withdraw=Number(prompt("Enter the amount to withdraw"));
+                document.write("Withdraw Amount = "+Withdraw+"</br>")
+                initial_amount-=Withdraw
+                document.write("Balance Amount = "+initial_amount+"</br>");
+                break;
+            case 3:
+                let deposite=Number(prompt("Enter the amount to deposite"));
+                document.write("Deposite Amount = "+deposite+"</br>")
+                ini
+                document.write("Balance Amount = "+(initial_amount+deposite)+"</br>");
+                break;
+            default:
+                document.write("Invalide Key");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water_Bill_Calculator</title>
+</head>
+<body>
+    <h2>Water_Bill_Calculator</h2>
+    <div class="d1">
+      <form method="" action="">
+        <label>liters</label><input type="number" id="ip1" /><br />
+        
+        <button type="submit" onclick="water()">Calculate</button>
+      </form>
+    </div>
+    <script>
+        let liter = Number(prompt("Enter the How many liters"));
+        if(liter<=500){
+            let per_liter = 1;
+            document.write("Number Of Liter = "+ liter+"</br>");
+            document.write("Amount Per Liter = 1 </br>");
+            document.write("Total Bill Amount = "+(liter*per_liter)+"</br>");
+        }
+        else if(liter>500){
+            let per_liter = 2;
+            document.write("Number Of Liter = "+ liter+"</br>");
+            document.write("Amount Per Liter = 2 </br>");
+            document.write("Total Bill Amount = "+(liter*per_liter)+"</br>");
+            
+        }
+        else{
+            document.write("Invalide Liter value");
+        }
+    </script>
+</body>
+</html>

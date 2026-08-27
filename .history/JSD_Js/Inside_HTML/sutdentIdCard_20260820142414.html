@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_ID</title>
+</head>
+<body>
+    <h2>Student_ID_Card</h2>
+    <input type="text" id="sName" placeholder="Enter Student Name"><br><br>
+    <input type="text" id="sCourse" placeholder="Enter Course Name"><br><br>
+    <input type="text" id="sMobile" placeholder="Enter Mobile Number"><br><br>
+    <button type="submit" onclick="idCard()">Generate</button><br><br>
+    
+    <table id="t1" cellpadding="10px">
+        <tr>
+            <th id="the1"></th>
+            <td id="td1"></td>
+        </tr>
+        <tr>
+            <th id="the2"></th>
+            <td id="td2"></td>
+        </tr>
+        <tr>
+            <th id="the3"></th>
+            <td  id="td3"></td>
+        </tr>
+    </table>
+    <script>
+        function idCard(){
+             let name = document.getElementById("sName").value;
+             let course = document.getElementById("sCourse").value;
+             let mobile = document.getElementById("sMobile").value;
+             if(name!= null && course!=null && mobile!=null){
+                document.getElementById("t1").style.backgroundColor = "lightgreen";
+                document.getElementById("the1").innerText ="Name";
+                document.getElementById("the2").innerText ="Course";
+                document.getElementById("the3").innerText ="Mobile";
+                document.getElementById("td1").innerText = name ;
+                document.getElementById("td2").innerText = course ;
+                document.getElementById("td3").innerText = mobile ; 
+             }
+             else{
+                 document.getElementById("t1").innerHTML = "<h3>Fill all Input Fields </h3>";
+             }
+        }
+    </script>
+</body>
+</html>

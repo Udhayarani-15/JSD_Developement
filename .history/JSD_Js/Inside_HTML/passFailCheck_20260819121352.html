@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassFailCheck</title>
+</head>
+<body>
+    <h3>Mark check</h3>
+    <input type="number" id="ip1" placeholder="Enter the Number"><br/>
+    <p id="val"></p>
+    <button type="submit" onclick="checking()">Check</button>
+    <script>
+        function checking(){
+            let value = document.getElementById("ip1").value;
+            if(value>35){
+                document.getElementById("val").innerText="The Given Mark "+value+" Is Pass";
+            }
+            else if(value<35){
+                document.getElementById("val").innerText="The Given Number "+value+" Is Negative";
+            }
+            else if(value==0){
+                document.getElementById("val").innerText="The Given Number "+value+" Is Neutral";
+            }
+            else{
+                document.getElementById("val").innerText="The Given Value "+value+" Is Not a Number";
+            }
+        }
+    </script>
+</body>
+</html>

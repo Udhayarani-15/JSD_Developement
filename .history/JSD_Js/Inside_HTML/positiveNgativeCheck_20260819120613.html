@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PositiveNegative</title>
+</head>
+<>
+    <h1>Find Positive Negative</h1>
+    <input type="number" id="ip1" placeholder="Enter the Number"><br/>
+    <p id="val"></p>
+    <button type="submit" onclick="checking()">Check</button>
+    <script>
+        function checking(){
+            let value = document.getElementById("ip1").value;
+            if(value>0){
+                document.getElementById("val").innerText="The Given Value"+value+" Is Positive";
+            }
+            else if(value<0){
+                document.getElementById("val").innerText="The Given Value"+value+" Is Negative";
+            }
+            else if(value==0){
+                document.getElementById("val").innerText="The Given Value"+value+" Is Positive";
+            }
+        }
+    </script>
+</body>
+</html>

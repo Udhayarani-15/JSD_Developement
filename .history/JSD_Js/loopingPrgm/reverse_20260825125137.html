@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReverseNumber</title>
+</head>
+<body>
+    <script>
+        let num = 1545451;
+        let temp = num;
+        let rev=0;
+        document.write("Num = "+num+"</br><br>");
+        while(num>0){
+            let rem = num %10;
+            rev= (rev*10)+rem;
+            num = parseInt(num/10);
+        }
+        document.write("Rev = "+rev+"<br><br>");
+        if(rev == temp){
+            document.write(temp +" is palindrome "+"<br><br>");
+        }
+        else{
+             document.write(temp +" is not palindrome "+"<br><br>");
+        }
+        document.write("</br><hr><br>");
+        document.write("<h4>Niven Number</h4>");
+        let niv = 15;
+        let t = niv;
+        let sum = 0;
+        while(niv>0){
+            let rem1 = niv %10;
+            sum+=rem1 ;
+            niv =parseInt(niv/10);
+        }
+        let per = t % sum ;
+         document.write(per+"<br><br>");
+        if(per == 0){
+             document.write(t +" is Niven Number "+"<br><br>");
+        }
+        else{
+             document.write(t +" is not Niven "+"<br><br>");
+        }
+
+
+        document.write("</br><hr><br>");
+        document.write("<h4>Find the Number</h4>");
+        let value = 14636463;
+        let found = 6;
+        let count = 0;
+        while(value>0){
+            let rem2 = value %10;
+            if(rem2 == found){
+                count++;
+            }
+            value =parseInt(value/10); 
+        }
+       
+         document.write("Number of time the digit present = "+count+"<br><br>");
+        if(count > 0){
+             document.write(found +" is found "+"<br><br>");
+        }
+        else{
+             document.write(found +" is not found "+"<br><br>");
+        }
+
+
+        document.write("</br><hr><br>");
+        document.write("<h4>Twisted Prime</h4>");
+        let pNum = 14636463;
+        let reverse = 0;
+        let tel = pNum;
+        
+        while(pNum>0){
+            let prem = pNum %10;
+            reverse = reverse *10 + prem;
+            value =parseInt(pNum/10); 
+        }
+       
+         document.write("Reverse Number of prime number = "+reverse+"<br><br>");
+        for (let i = 2; i < reverse; i++) {
+          if (i % reverse == 0) {
+            pcount++;
+          }
+        }
+        if (pcount == 0) {
+          document.write(reverse +" is twisted prime "+"<br><br>");
+        } else {
+          document.write(reverse +" is not twisted prime "+"<br><br>");
+        }
+      
+
+
+    </script>
+</body>
+</html>

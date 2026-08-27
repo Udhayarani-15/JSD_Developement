@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whileloop</title>
+</head>
+<body>
+    <script>
+       let num = 1463;
+       
+       while(num > 0){
+        let rem = num % 10;
+        document.write(rem+"<br><br>");
+        num = parseInt(num/10);
+       }
+       document.write("<br><hr><br>");
+
+       let num1 = 1545;
+       let sum = 0;
+       while(num1 > 0){
+        let rem1 = num1 % 10;
+        sum+=rem1;
+        document.write(rem1+"<br><br>");
+        num1 = parseInt(num1/10);
+       }
+       document.write("Sum = "+sum+"<br><br>");
+       document.write("<br><hr><br>");
+
+       let num2 = 1545;
+       let temp = num2
+       let sum2 = 0;
+       while(num2 > 0){
+        let rem1 = num1 % 10;
+        sum+=rem1;
+        document.write(rem1+"<br><br>");
+        num1 = parseInt(num1/10);
+       }
+       document.write("Sum = "+sum+"<br><br>");
+       document.write("<br><hr><br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank_Loan_Approvsl_Process</title>
+     <link rel="stylesheet" href="external.css">
+    <style>
+      #ip2,
+      #ip3,
+      #ntBtn{
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <
+    <h2>Bank_Loan_Approvsl_Process</h2>
+    <div id="d1">
+      <form>
+<input type="number" id="ip1" placeholder="Enter Your Salary" />
+    <button onclick="salary()">Find_Salary_Eligiblity</button>
+    <br />
+    </div>
+    
+
+    <script>
+      function salary() {
+        let salary1 = Number(document.getElementById("ip1").value);
+        if (salary1 >= 25000) {
+          document.getElementById("ip2").style.visibility = "visible";
+          document.getElementById("ntBtn").style.visibility = "visible";
+          document.getElementById("p1").innerText =
+            "Salary Eligible. Enter into Next Check.";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Not Eligible For Bank Loan";
+        }
+      }
+
+      function ageCali() {
+        let age = Number(document.getElementById("ip2").value);
+        if (age >= 21) {
+          document.getElementById("p1").innerText =
+            "Age Eligible for Bank Loan, so loan approved";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Age Not Eligible For bank Loan ";
+        }
+      }
+
+    </script>
+  </body>
+</html>

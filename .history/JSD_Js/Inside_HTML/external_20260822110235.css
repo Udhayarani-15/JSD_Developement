@@ -1,0 +1,42 @@
+
+
+h2 {
+  color: white;
+  text-align: center;
+}
+.d1 {
+  background: radial-gradient(purple,cornsilk);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family;
+}
+#d2 {
+  background-color: white;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px;
+}
+input {
+  padding: 10px;
+  margin: 15px;
+}
+p{
+    color: green;
+    font-weight: bold;
+}
+
+button {
+  margin: 15px;
+  padding: 10px;
+}
+button:hover {
+  background-color: darkolivegreen;
+  color: white;
+}

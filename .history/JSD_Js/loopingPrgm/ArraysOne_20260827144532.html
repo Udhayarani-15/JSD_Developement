@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArrayOne</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h4>Array</h4>");
+      let a = [2, 3, 6, 37, 94, 15, 20];
+      for (let i = 0; i < a.length; i++) {
+        document.write("Array[" + i + "] = " + a[i] + "<br><br>");
+      }
+
+      document.write("</br><hr></br>");
+      document.write("<h4>Even Number Number</h4>");
+      arr = [23, 54, 6, 24, 93, 15, 20];
+      for (let j = 0; j < arr.length; j++) {
+        num = arr[j];
+        if (num % 2 == 0) {
+          document.write(
+            "Array[" + j + "] = " + arr[j] + " Even Number<br><br>",
+          );
+        }
+      }
+      document.write("</br><hr></br>");
+      document.write("<h4>Prime Number</h4>");
+      ary = [13, 47, 23, 21, 51, 35, 11, 49, 79];
+      for (let y = 0; y < ary.length; y++) {
+        let num = ary[y];
+        let pcount = 0;
+        for (let i = 2; i < num; i++) {
+          if (num % i == 0) {
+            pcount++;
+          }
+        }
+        if (pcount == 0) {
+          document.write(
+            "Array[" + y + "] = " + ary[y] + " Is Prime Number<br><br>",
+          );
+        }
+      }
+      document.write("</br><hr></br>");
+      document.write("<h4>Factorial</h4>");
+      let fact = 1;
+      for(let x;x<=n;)
+    </script>
+  </body>
+</html>

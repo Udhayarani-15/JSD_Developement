@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity_Bill</title>
+</head>
+<body>
+    <h2>Electricity_Bill_Calculator</h2>
+    <script>
+        let units = Number(prompt("Enter the bill amount"));
+        if(units<=100){
+            let per_unit = 2;
+            let Tot_bill = per_unit * units;
+            document.write("Total Units = "+units+"</br>");
+            document.write("Per Unit = 2 </br>");
+            document.write("Total Bill Amount = "+Tot_bill+"</br>");
+        }
+        else if(units<=300){
+            let per_unit = 3;
+            let Tot_bill = per_unit * units;
+            document.write("Total Units = "+units+"</br>");
+            document.write("Per Unit = 3 </br>");
+            document.write("Total Bill Amount = "+Tot_bill+"</br>");
+        }
+        else if (units>300){
+            let per_unit = 5;
+            let Tot_bill = per_unit * units;
+            document.write("Total Units = "+units+"</br>");
+            document.write("Per Unit = 2 </br>");
+            document.write("Total Bill Amount = "+Tot_bill+"</br>");
+        }
+    </script>
+</body>
+</html>

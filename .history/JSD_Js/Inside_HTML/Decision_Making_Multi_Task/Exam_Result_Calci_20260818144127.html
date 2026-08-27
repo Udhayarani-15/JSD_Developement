@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam_Result</title>
+</head>
+<body>
+    <h2>Exam_Result_Calculation</h2>
+    <script>
+        let income = Number(prompt("Enter the bill amount"));
+        if(income<250000){
+            document.write("Income = "+income+"</br>");
+            document.write("Tax = 0% </br>");
+            document.write("Tax Amount = 0 </br>");
+        }
+        else if(income>=250000 && income<=500000){
+            tax = income*(5/100);
+            document.write("Income = "+income+"</br>");
+            document.write("Tax = 5% </br>");
+            document.write("Tax amount = "+ tax+"</br>");
+            
+        }
+        else if(income>500000){
+            tax = income*(10/100);
+            document.write("Income = "+income+"</br>");
+            document.write("Tax = 10% </br>");
+            document.write("Tax amount = "+ tax+"</br>");
+            
+        }
+        else{
+            document.write("Invalide Income");
+        }
+    </script>
+</body>
+</html>

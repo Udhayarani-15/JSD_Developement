@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuthenticationCheck</title>
+</head>
+<body>
+    <h2>Authentication Check</h2>
+    <input type="text" id="ip1" placeholder="Enter Role"><br/>
+    <input type="password" id="ip2" placeholder="Enter Password"><br/>
+    <p id="val"></p>
+    <button type="submit" onclick="find()">Check</button>
+    <script>
+        function find(){
+            let data1=document.getElementById("ip1").value;
+            let data2=document.getElementById("ip2").value;
+            if((data1=="Admin" || data1=="admin") && (data2=="12345")){
+                document.getElementById("val").innerText="Role = "+data1+"Login Successfully";
+            }
+            else if((data1!="Admin" || data1!="admin") && (data2!="12345")){
+                document.getElementById("val").innerText="Role = "+data1+"Enter the C";
+            }
+            
+
+        }
+    </script>
+</body>
+</html>

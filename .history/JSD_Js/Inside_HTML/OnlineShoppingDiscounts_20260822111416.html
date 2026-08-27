@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online_Shopping</title>
+      <link rel="stylesheet" href="external.css">
+    <style>
+      #ip2,
+      #ip3,
+      #ntBtn {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="d1">
+        <div id="d1"></div>
+    </div>
+
+    <h1>Online_Shopping</h1>
+    <input type="number" id="ip1" placeholder="Enter Total shopping Amount" />
+    <button onclick="amountCalci()">CheckAmount</button>
+    <br /><br />
+    <input type="text" id="ip2" placeholder="Premium Or Not" />
+    <button id="ntBtn" onclick="disCali()">CheckPremium</button>
+    <br /><br />
+    <p id="p1"></p>
+
+    <script>
+      function amountCalci() {
+        let amount = Number(document.getElementById("ip1").value);
+        if (amount >= 2000) {
+          document.getElementById("ip2").style.visibility = "visible";
+          document.getElementById("ntBtn").style.visibility = "visible";
+          document.getElementById("p1").innerText =
+            "Amount Higher Than 2000 so eligible for Discount";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Not Eligible For Discount";
+        }
+      }
+
+      function disCali() {
+        let premium = document.getElementById("ip2").value;
+        if (premium == "Yes" || premium == "yes") {
+          let dis = amount * (20 / 100);
+          let tot = amount - dis;
+          document.getElementById("p1").innerText =
+            "Discount 20%  Total Amount = " + tot;
+        } else {
+          let dis = amount * (10 / 100);
+          let tot = amount - dis;
+          document.getElementById("p1").innerText =
+            "Discount 10%  Total Amount = " + tot;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Making</title>
+  </head>
+  <body>
+    <script>
+      let num = Number(prompt("Enter the number to check"));
+      document.write("Positve Or Negative finding : ");
+      document.write("</br>");
+      if (num > 0) {
+        document.write(num + " Positive");
+      } else if (num < 0) {
+        document.write(num + " Negative");
+      } else if (num == 0) {
+        document.write(num + " Neutral");
+      } else {
+        document.write(num + " Not a Number");
+      }
+      document.write("</br>");
+
+
+      let value = Number(prompt("Enter the divisible value to check"));
+      document.write("Divisible 3 Or Divisible 5 finding : ");
+      document.write("</br>");
+      if (value % 3 == 0 && value % 5 == 0) {
+        document.write(value + " Fizz Buss");
+      } else if (value % 3 == 0) {
+        document.write(value + " Fizz");
+      } else if (value % 5 == 0) {
+        document.write(value + " buss");
+      } else {
+        document.write(
+          "The Given Number " + value + "is not divisible by 3 or 5",
+        );
+      }
+      document.write("</br>");
+
+
+      let day = Number(prompt("Enter the day"));
+      document.write("Day finding : ");
+      document.write("</br>");
+      if (day == 1) {
+        document.write(day + " Sunday");
+      } else if (day == 2) {
+        document.write(day + " Monday");
+      } else if (day == 3) {
+        document.write(day + " Tuesday");
+      } else if (day == 4) {
+        document.write(day + " Wednesday");
+      } else if (day == 5) {
+        document.write(day + " Thrusday");
+      } else if (day == 6) {
+        document.write(day + " Friday");
+      } else if (day == 7) {
+        document.write(day + " Saturday");
+      } else {
+        document.write("The Given day " + day + " is not day number");
+      }
+      document.write("</br>");
+
+      let a = Number(prompt("Enter the a value"));
+      let b = Number(prompt("Enter the b value"));
+      let c = Number(prompt("Enter the  c value "));
+      document.write("Arthmetic by c number : ");
+      document.write(a);
+      document.write(b);
+      document.write("</br>");
+      if (c ==1) {
+        document.write(a+b+ " a+b");
+      } else if (c==2) {
+        document.write(a-b+ " a-b");
+      } else if (c==3) {
+        document.write(a*b+ " a*b");
+      } else if (c==4) {
+        document.write(a/b+ " a/b");
+      }
+      else{
+        document.write("Not a number")
+      }
+      document.write("</br>");
+
+      let var1 = Number(prompt("Enter the var1 value"));
+      let var2 = Number(prompt("Enter the var2 value"));
+      let var3 = prompt("Enter the value must be +,-,*,/ ");
+      document.write("Arthmetic by var3 number : ");
+      document.write(a);
+      document.write(b);
+      document.write("</br>");
+      if (var3 =="+") {
+        document.write(a+b+ " a+b");
+      } else if (var3=="-") {
+        document.write(a-b+ " a-b");
+      } else if (var3=="*") {
+        document.write(a*b+ " a*b");
+      } else if (var3=="/") {
+        document.write(a/b+ " a/b");
+      }
+      else{
+        document.write("Not a rquired symbol")
+      }
+      document.write("</br>");
+
+      let x = Number(prompt("Enter the a value"));
+      let y = Number(prompt("Enter the b value"));
+      let z = Number(prompt("Enter the  c value "));
+      document.write("Arthmetic by c number : ");
+      document.write(a);
+      document.write(b);
+      document.write("</br>");
+      if (c ==1) {
+        document.write(a+b+ " a+b");
+      } else if (c==2) {
+        document.write(a-b+ " a-b");
+      } else if (c==3) {
+        document.write(a*b+ " a*b");
+      } else if (c==4) {
+        document.write(a/b+ " a/b");
+      }
+      else{
+        document.write("Not a number")
+      }
+    </script>
+  </body>
+</html>

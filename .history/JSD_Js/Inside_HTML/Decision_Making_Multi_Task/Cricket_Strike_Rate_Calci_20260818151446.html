@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket_Strike_Rate_Calculator</title>
+</head>
+<body>
+    <h2>Cricket_Strike_Rate_Calculator</h2>
+    <script>
+        let balls = Number(prompt("Enter the number of balls"));
+        let runs = Number(prompt("Enter the number of runs "));
+        let s_rate = (runs/balls)*100;
+        if(s_rate >150){
+        
+            document.write("Number Of Balls = "+balls+"</br>");
+            document.write("Number of Runs = "+runs+"</br>");
+            document.write("Strike Rate = "+s_rate+"</br>");
+            document.write("E</br>");
+        }
+        else if(exp >= 5){
+            let hike = salary*(10/100);
+            document.write("Salary Amount = "+salary+"</br>");
+            document.write("Experience Years = "+exp+"</br>");
+            document.write("Hike = 10% </br>"+"Hike Amount = "+hike+"</br>");
+            document.write("Total Salary with Hike = "+(salary+hike)+"</br>");
+        }
+       else  if(exp < 5 ){
+            let hike = salary*(5/100);
+            document.write("Salary Amount = "+salary+"</br>");
+            document.write("Experience Years = "+exp+"</br>");
+            document.write("Hike = 5% </br>"+"Hike Amount = "+hike+"</br>");
+            document.write("Total Salary with Hike = "+(salary+hike)+"</br>");
+        }
+        else{
+            document.write("Invalide Salary Amount or Experience");
+        }
+    </script>
+</body>
+</html>

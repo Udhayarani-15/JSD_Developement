@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age_Liceence</title>
+</head>
+<body>
+    <h2>Score_Experence</h2>
+    <input type="number" id="ip1" placeholder="Enter The Age"><br>
+    <input type="number" id="ip2" placeholder="Enter The Licenc"><br>
+    <p id="p1"></p>
+    <button type="submit" onclick="sal()">Click</button>
+    <script>
+        function sal(){
+            let score = Number(document.getElementById("ip1").value);
+            if(score>=85){
+                document.getElementById("ip2").style.visibility = "visible";
+                let exp = Number(document.getElementById("ip2").value);
+                if(exp>0 && exp<=2){
+                    document.getElementById("p1").innerText = " salary = 5000k";
+                }
+                else if(exp>=3 && exp<5){
+                    document.getElementById("p1").innerText = "salary = 1000k";
+                }
+                else if(exp>=5){
+                    document.getElementById("p1").innerText = "Salary = 20000k";
+                }
+                else{
+                    document.getElementById("p1").innerText = "Training Period";
+                }
+            }
+            else{
+                document.getElementById("p1").innerText = "Salary = 7000k ";
+            }
+        }
+    </script>
+</body>
+</html>

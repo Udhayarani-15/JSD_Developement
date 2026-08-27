@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary_Increment_Calculator</title>
+</head>
+<body>
+    <h2>Salary_Increment_Calculator</h2>
+    <script>
+        let salary = Number(prompt("Enter the salary amount"));
+        let exp =
+        if(income<250000){
+            document.write("Income = "+income+"</br>");
+            document.write("Tax = 0% </br>");
+            document.write("Tax Amount = 0 </br>");
+        }
+        else if(income>=250000 && income<=500000){
+            tax = income*(5/100);
+            document.write("Income = "+income+"</br>");
+            document.write("Tax = 5% </br>");
+            document.write("Tax amount = "+ tax+"</br>");
+            
+        }
+        else if(income>500000){
+            tax = income*(10/100);
+            document.write("Income = "+income+"</br>");
+            document.write("Tax = 10% </br>");
+            document.write("Tax amount = "+ tax+"</br>");
+            
+        }
+        else{
+            document.write("Invalide Income");
+        }
+    </script>
+</body>
+</html>

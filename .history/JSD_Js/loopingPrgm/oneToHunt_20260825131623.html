@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneT0Hunt</title>
+</head>
+<body>
+    <script>
+        document.write("<h4>Twisted Prime</h4>");
+        for(let x=1;x<=21;x++){
+        let pNum = x;
+        let reverse = 0;
+        let tel = pNum;
+        
+        while(pNum>0){
+            let prem = pNum %10;
+            reverse = reverse *10 + prem;
+            pNum =parseInt(pNum/10); 
+        }
+       
+        document.write("Reverse of Number = "+reverse+"<br><br>");
+        let pcount =0;
+        for (let i = 2; i < reverse; i++) {
+          if (reverse % i == 0) {
+            pcount++;
+          }
+        }
+        if (pcount == 0) {
+          document.write(reverse +" is twisted prime "+"<br><br>");
+        } else {
+          document.write(reverse +" is not twisted prime "+"<br><br>");
+        }
+         document.write("</br><hr><br>");
+        }
+
+        for(let j = 1;j<=100;j++){
+        let num = j;
+        let psum = 0;
+        for (let i = 1; i < num; i++) {
+          if (num % i == 0) {
+            psum += i;
+          }
+        }
+        document.getElementById("p1").innerText = psum;
+        if (num == psum) {
+          document.getElementById("p2").innerText =
+            num + " is a perfect number";
+        } else {
+          document.getElementById("p2").innerText =
+            num + " is not a perfect number";
+        }
+    }
+    </script>
+</body>
+</html>

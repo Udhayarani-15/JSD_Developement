@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview_Process</title>
+    
+</head>
+<body>
+    <h2>Interview_Result_Process</h2>
+    <input type="number" id="ip1" placeholder="Enter Aptitude Mark"><br>
+    <input type="number" id="ip2" placeholder="Enter GD Mark"><br>
+    <input type="number" id="ip3" placeholder="Enter Tech Mark"><br>
+    <button type="submit" onclick="aptiR1()">Next</button>
+    <script>
+        function aptiR1(){
+            let apti = Number(document.getElementById("ip1").value);
+            if(apti  >= 50){
+                document.getElementById("p1").style.visibility = ;
+                let gd = Number(document.getElementById("ip2").value);
+                if(gd >= 65){
+                    document.getElementById("p2").innerHTML='';
+                    let tech = Number(document.getElementById("ip3").value);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

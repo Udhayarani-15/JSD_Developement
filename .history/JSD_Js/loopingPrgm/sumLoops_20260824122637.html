@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>evenSumloop</title>
+  </head>
+  <body>
+    <h1>Perfect Number</h1>
+    <input
+      type="number"
+      id="ip1"
+      placeholder="enter the Number to check"
+    /><br /><br />
+    <button type="submit" onClick="perfectFind()">FindPerfect</button>
+    <p id="p1"></p>
+    <p id="p2"></p><hr>
+
+    <h1>Prime Number</h1>
+    <input
+      type="number"
+      id="ip2"
+      placeholder="enter the Number to check"
+    /><br /><br />
+    <button type="submit" onClick="primeFind()">FindPrime</button>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <script>
+      for (let i = 1; i <= 10; i++) {
+        if (i % 2 == 0) {
+          document.write(i + " = Even</br></br>");
+        } else {
+          document.write(i + " = Odd</br></br>");
+        }
+      }
+      document.write("</br><hr></br>");
+      let sum = 0;
+      for (let i = 1; i <= 100; i++) {
+        if (i % 2 == 0) {
+          sum += i;
+        }
+      }
+      document.write(sum + " is the Sum of even numbers");
+      document.write("</br><hr></br>");
+      let count = 0;
+      for (let i = 1; i <= 100; i++) {
+        if (i % 2 == 0) {
+          count++;
+        }
+      }
+      document.write(count + " is the count of even numbers");
+      document.write("</br><hr></br>");
+      let mSum = 0;
+      for (let i = 100; i <= 200; i++) {
+        if (i % 9 == 0) {
+          mSum += i;
+        }
+      }
+      document.write(mSum + " is the Sum of multiples of 9 ");
+      document.write("</br><hr></br>");
+
+      function perfectFind() {
+        let num = Number(document.getElementById("ip1").value);
+        let psum = 0;
+        for (let i = 1; i < num; i++) {
+          if (num % i == 0) {
+            psum += i;
+          }
+        }
+        document.getElementById("p1").innerText = psum;
+        if (num == psum) {
+          document.getElementById("p2").innerText =
+            num + " is a perfect number";
+        } else {
+          document.getElementById("p2").innerText =
+            num + " is not a perfect number";
+        }
+      }
+      document.write("</br><hr></br>");
+
+
+      function perfectFind() {
+        let number = Number(document.getElementById("ip2").value);
+        let pcount = 0;
+        for (let i = 1; i < number; i++) {
+          if (i % number == 0) {
+            pcount++;
+          }
+        }
+        document.getElementById("p3").innerText = pcount;
+        if (pcount == 0) {
+          document.getElementById("p4").innerText =
+            number + " is a prime number";
+        } else {
+          document.getElementById("p2").innerText =
+            num + " is not a prime number";
+        }
+      }
+      document.write("</br><hr></br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InsertValue</title>
+  </head>
+  <body>
+    <input type="text" id="ip1" placeholder="enter array value" /><br /><br />
+    <button type="submit" onclick="arrAdd()">Add</button>
+    <p id="p1"></p>
+    <script>
+      
+      let arr = [];
+      function arrAdd() {
+        let name = document.getElementById("ip1").value;
+        arr.push(name.value);
+        document.getElementById("p1").innerText=arr;
+      }
+    </script>
+  </body>
+</html>

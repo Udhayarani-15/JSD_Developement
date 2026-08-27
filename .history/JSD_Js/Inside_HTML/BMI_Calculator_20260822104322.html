@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body_Mass_Index</title>
+    <link rel="stylesheet" href="external.css">
+  </head>
+  <body>
+    <h2>Body_Mass_Index</h2>
+    <div ="d1">
+      <form>
+        <input type="number" id="ip1" placeholder="Enter Height" /><br>
+        <input type="number" id="ip2" placeholder="Enter Weight" /><br>
+        <button type="submit" onclick="bmiChecker()">FindBMI</button>
+        <p id="p1"></p>
+      </form>
+    </div>
+
+    <script>
+      function bmiChecker() {
+        let height = Number(document.getElementById("ip1").value);
+        let weight = Number(document.getElementById("ip2").value);
+        let heightS = height / 100;
+        let divide = heightS * heightS;
+        let BMI = weight / divide;
+        if (BMI < 18.5) {
+          document.getElementById("p1").innerText = "UnderWeight " + BMI;
+        } else if (BMI < 25) {
+          document.getElementById("p1").innerText = "Normal Weight " + BMI;
+        } else if (BMI <= 30) {
+          document.getElementById("p1").innerText = "OverWeight " + BMI;
+        } else {
+          document.getElementById("p1").innerText = "Obicity " + BMI;
+        }
+      }
+    </script>
+  </body>
+</html>

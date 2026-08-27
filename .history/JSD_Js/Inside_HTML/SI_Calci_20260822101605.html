@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple_Interest_Calci</title>
+  </head>
+
+  <body>
+    <h2>College_Adminnsion_Process</h2>
+    <input type="number" id="ip1" placeholder="Enter Principal" />
+    <br /><br />
+    <input type="number" id="ip2" placeholder="Enter rate" /><br>
+    <input type="number" id="ip1" placeholder="Enter Time" /><br>
+    <button id="ntBtn" onclick="siCalci()">Find_SI</button>
+    <br /><br />
+    <p id="p1"></p>
+
+    <script>
+      function siCalci() {
+        let principal = Number(document.getElementById("ip1").value);
+         let rate = Number(document.getElementById("ip1").value);
+          let time = Number(document.getElementById("ip1").value);
+        if (principal!=n) {
+          document.getElementById("ip2").style.visibility = "visible";
+          document.getElementById("ntBtn").style.visibility = "visible";
+          document.getElementById("p1").innerText =
+            "Percentage Eligible. Enter into Next Check.";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Not Eligible For College Admision";
+        }
+      }
+
+
+    </script>
+  </body>
+</html>

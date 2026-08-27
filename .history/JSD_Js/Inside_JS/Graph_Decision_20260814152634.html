@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+</head>
+<body>
+    <script>
+        let X=Number(prompt("Enter the X-axis "));
+        let Y=Number(prompt("Enter the y-axis "));
+        if(X>0 && Y>0){
+            document.write("I quadrent");
+        }
+        if(X>0 && Y<0){
+            document.write("II quadrent");
+        }
+        if(X<0 && Y<0){
+            document.write("III quadrent");
+        }
+        if(X<0 && Y>0){
+            document.write("IV quadrent");
+        }
+        else{
+            document.write("Invalid");
+        }
+    </script>
+</body>
+</html>

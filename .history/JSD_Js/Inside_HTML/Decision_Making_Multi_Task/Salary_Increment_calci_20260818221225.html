@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary_Increment_Calculator</title>
+</head>
+<body>
+    <h2>Salary_Increment_Calculator</h2>
+    <div class="d1">
+      <form method="" action="">
+        <label>Salary</label><input type="number" id="ip1" /><br />
+        <label>Experience</label><input type="number" id="ip2" /><br />
+        <button type="submit" onclick="sal_tot()">Calculate</button>
+      </form>
+    </div>
+    <script>
+        function sal_tot(){
+
+        
+        let salary = Number(prompt("Enter the salary amount"));
+        let exp = Number(prompt("Enter the number of experience "));
+        if(exp >= 10){
+            let hike = salary*(20/100);
+            document.write("Salary Amount = "+salary+"</br>");
+            document.write("Experience Years = "+exp+"</br>");
+            document.write("Hike = 20% </br>"+"Hike Amount = "+hike+"</br>");
+            document.write("Total Salary with Hike = "+(salary+hike)+"</br>");
+        }
+        else if(exp >= 5){
+            let hike = salary*(10/100);
+            document.write("Salary Amount = "+salary+"</br>");
+            document.write("Experience Years = "+exp+"</br>");
+            document.write("Hike = 10% </br>"+"Hike Amount = "+hike+"</br>");
+            document.write("Total Salary with Hike = "+(salary+hike)+"</br>");
+        }
+       else  if(exp < 5 ){
+            let hike = salary*(5/100);
+            document.write("Salary Amount = "+salary+"</br>");
+            document.write("Experience Years = "+exp+"</br>");
+            document.write("Hike = 5% </br>"+"Hike Amount = "+hike+"</br>");
+            document.write("Total Salary with Hike = "+(salary+hike)+"</br>");
+        }
+        else{
+            document.write("Invalide Salary Amount or Experience");
+        }
+    }
+    </script>
+</body>
+</html>

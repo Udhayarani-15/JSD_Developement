@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneT0Hunt</title>
+</head>
+<body>
+    <script>
+        for(){
+        let pNum = 17;
+        let reverse = 0;
+        let tel = pNum;
+        
+        while(pNum>0){
+            let prem = pNum %10;
+            reverse = reverse *10 + prem;
+            pNum =parseInt(pNum/10); 
+        }
+       
+        document.write("Reverse Number of prime number = "+reverse+"<br><br>");
+        let pcount =0;
+        for (let i = 2; i < reverse; i++) {
+          if (reverse % i == 0) {
+            pcount++;
+          }
+        }
+        if (pcount == 0) {
+          document.write(reverse +" is twisted prime "+"<br><br>");
+        } else {
+          document.write(reverse +" is not twisted prime "+"<br><br>");
+        }
+      
+        }
+    </script>
+</body>
+</html>

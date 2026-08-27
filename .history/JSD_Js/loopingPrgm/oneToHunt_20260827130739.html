@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneT0Hunt</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h4>Twisted Prime</h4>");
+      for (let x = 1; x <= 21; x++) {
+        let pNum = x;
+        let reverse = 0;
+        let tel = pNum;
+
+        while (pNum > 0) {
+          let prem = pNum % 10;
+          reverse = reverse * 10 + prem;
+          pNum = parseInt(pNum / 10);
+        }
+
+        document.write("Reverse of Number = " + reverse + "<br><br>");
+        let pcount = 0;
+        for (let i = 2; i < reverse; i++) {
+          if (reverse % i == 0) {
+            pcount++;
+          }
+        }
+        if (pcount == 0) {
+          document.write(reverse + " is twisted prime " + "<br><br>");
+        } else {
+          document.write(reverse + " is not twisted prime " + "<br><br>");
+        }
+        document.write("</br><hr><br>");
+      }
+      document.write("<hr><hr><br>");
+      document.write("<h4>Perfect Number</h4>");
+      for (let j = 1; j <= 1000; j++) {
+        let num = j;
+        let psum = 0;
+        for (let i = 1; i < num; i++) {
+          if (num % i == 0) {
+            psum += i;
+          }
+        }
+        if (num == psum) {
+          document.write(num + " is perfect number<br>");
+          document.write("</br><hr><br>");
+        }
+      }
+
+      document.write("<hr><hr><br>");
+      document.write("<h4>Amstrong Number</h4>");
+      for (let z = 100; z <= 1000; z++) {
+        let num2 = z;
+        let temp = num2;
+        let sum2 = 0;
+        while (num2 > 0) {
+          let rem2 = num2 % 10;
+          let cube = rem2 * rem2 * rem2;
+          sum2 += cube;
+          num2 = parseInt(num2 / 10);
+        }
+        if (temp == sum2) {
+          document.write(temp + " is a Amstrong Number <br><br>");
+          document.write("</br><hr>");
+        }
+      }
+      
+      for (let y = 1; y <= 100; y++) {
+        let number = y;
+        let pcount = 0;
+        for (let i = 2; i < number; i++) {
+          if (i % number == 0) {
+            pcount++;
+          }
+          
+        }
+        if (pcount == 0) {
+          document.write(number + " is a prime number<br><br>");
+        }
+      }
+      document.write(pcount+" is the number of prime numbers<br>")
+    </script>
+  </body>
+</html>

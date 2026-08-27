@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age_Liceence</title>
+    <style>
+        #ip2{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h2>Score_Experence</h2>
+    <input type="number" id="ip1" placeholder="Enter The Age"><br>
+    <input type="text" id="ip2" placeholder="Have Licence"><br>
+    <p id="p1"></p>
+    <button type="submit" onclick="check()">Click</button>
+    <script>
+        function check(){
+            let score = Number(document.getElementById("ip1").value);
+            if(age>=18){
+                document.getElementById("ip2").style.visibility = "visible";
+                let exp = Number(document.getElementById("ip2").value);
+                if(licence=="yes"){
+                    document.getElementById("p1").innerText = " Eligible to Drive";
+                }
+                else{
+                    document.getElementById("p1").innerText = "Not Eligible to drive";
+                }
+            }
+            else{
+                document.getElementById("p1").innerText = "Not Eligible to drive ";
+            }
+        }
+    </script>
+</body>
+</html>

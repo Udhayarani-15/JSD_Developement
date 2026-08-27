@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College_Adminnsion_Process</title>
+
+    <style>
+      #ip2,
+      #ip3,
+      #gdBtn{
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>College_Adminnsion_Process</h2>
+    <input type="number" id="ip1" placeholder="Enter Mark percentage" />
+    <button onclick="percent()">Find_Eligiblity</button>
+    <br /><br />
+    <input type="number" id="ip2" placeholder="Enter Age" />
+    <button id="ntBtn" onclick="ageCali()">Find_Admision</button>
+    <br /><br />
+    <p id="p1"></p>
+
+    <script>
+      function percent() {
+        let percentage = Number(document.getElementById("ip1").value);
+        if (percentage >= 60) {
+          document.getElementById("ip2").style.visibility = "visible";
+          document.getElementById("ntBtn").style.visibility = "visible";
+          document.getElementById("p1").innerText =
+            "Percentage Eligible. Enter into Next Check.";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Not Eligible For College Admision";
+        }
+      }
+
+      function ageCali() {
+        let age = Number(document.getElementById("ip2").value);
+        if (age >= 65) {
+          document.getElementById("ip3").style.visibility = "visible";
+          document.getElementById("techBtn").style.visibility = "visible";
+          document.getElementById("p1").innerText =
+            "Age Eligible . Admission Open";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Age Not Eligible For Admission ";
+        }
+      }
+
+    </script>
+  </body>
+</html>

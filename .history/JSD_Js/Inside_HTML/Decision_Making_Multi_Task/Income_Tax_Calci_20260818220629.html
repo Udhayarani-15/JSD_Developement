@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income_Tax</title>
+  </head>
+  <body>
+    <h2>Income_Tax_Calculator</h2>
+    <div class="d1">
+      <form method="" action="">
+        <label>Income</label><input type="number" id="ip1" /><br />
+        <button type="submit" onclick="Income_Tax()">Calculate</button>
+      </form>
+    </div>
+    <script>
+      function Income_Tax() {
+        let income = document.;
+        if (income < 250000) {
+          document.write("Income = " + income + "</br>");
+          document.write("Tax = 0% </br>");
+          document.write("Tax Amount = 0 </br>");
+        } else if (income >= 250000 && income <= 500000) {
+          let tax = income * (5 / 100);
+          document.write("Income = " + income + "</br>");
+          document.write("Tax = 5% </br>");
+          document.write("Tax amount = " + tax + "</br>");
+        } else if (income > 500000) {
+          let tax = income * (10 / 100);
+          document.write("Income = " + income + "</br>");
+          document.write("Tax = 10% </br>");
+          document.write("Tax amount = " + tax + "</br>");
+        } else {
+          document.write("Invalide Income");
+        }
+      }
+    </script>
+  </body>
+</html>

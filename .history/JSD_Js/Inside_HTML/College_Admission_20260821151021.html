@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College_Adminnsion_Process</title>
+
+    <style>
+      #ip2,
+      #ip3,
+      #gdBtn,
+      #techBtn {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>College_Adminnsion_Process</h2>
+    <input type="number" id="ip1" placeholder="Enter Mark percentage" />
+    <button onclick="percent()">Find_Eligiblity</button>
+    <br /><br />
+    <input type="number" id="ip2" placeholder="Enter Age" />
+    <button id="gdBtn" onclick="gdR1()">Find_Admision</button>
+    <br /><br />
+    <input type="number" id="ip3" placeholder="Enter Tech Mark" />
+    <button id="techBtn" onclick="techR1()">Next</button>
+    <p id="p1"></p>
+
+    <script>
+      function percent() {
+        let apti = Number(document.getElementById("ip1").value);
+        if (apti >= 60) {
+          document.getElementById("ip2").style.visibility = "visible";
+          document.getElementById("gdBtn").style.visibility = "visible";
+          document.getElementById("p1").innerText =
+            "Aptitude cleared. Enter your GD mark.";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Not Eligible For next round";
+        }
+      }
+
+      function gdR1() {
+        let gd = Number(document.getElementById("ip2").value);
+        if (gd >= 65) {
+          document.getElementById("ip3").style.visibility = "visible";
+          document.getElementById("techBtn").style.visibility = "visible";
+          document.getElementById("p1").innerText =
+            "GD cleared. Enter your Tech mark.";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Not Eligible For Tech round";
+        }
+      }
+
+      function techR1() {
+        let tech = Number(document.getElementById("ip3").value);
+        if (tech >= 75) {
+          document.getElementById("p1").innerText = "Eligible For HR round";
+        } else {
+          document.getElementById("p1").innerText = "Not Eligible For HR round";
+        }
+      }
+    </script>
+  </body>
+</html>

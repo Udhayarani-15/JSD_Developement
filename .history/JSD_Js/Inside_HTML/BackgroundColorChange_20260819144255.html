@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_Color_Change</title>
+</head>
+<body id="b1">
+    <button type="submit" onclick="blueC()" ondblclick="yellowC()">Blue</button>
+    <button type="submit" onclick="redC()">Red</button>
+    <button type="submit" onclick="greenC()">Green</button>
+    <script>
+        function blueC(){
+             document.getElementById("b1").style.backgroundColor = "lightblue";
+
+        }
+        function redC(){
+             document.getElementById("b1").style.backgroundColor = "lightred";
+
+        }
+        function greenC(){
+             document.getElementById("b1").style.backgroundColor = "lightgreen";
+
+        }
+        function yellowC(){
+             document.getElementById("b1").style.backgroundColor = "lightgray";
+
+        }
+
+    </script>
+
+</body>
+</html>

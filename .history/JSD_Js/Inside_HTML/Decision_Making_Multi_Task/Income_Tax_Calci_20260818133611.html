@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income_Tax</title>
+</head>
+<body>
+    <h2>Income_Tax_Calculator</h2>
+    <script>
+        let income = Number(prompt("Enter the bill amount"));
+        if(income<250000){
+            document.write("Income = "+income+"</br>");
+            document.write("Tax = 0% </br>");
+            document.write("Total Amount = "+income+"</br>");
+        }
+        else if(income>=250000 && income<=500000){
+            tax = income*(5/100);
+            document.write("Income = "+income+"</br>");
+            document.write("Tax % = 5 </br>");
+            document.write("Tax amount = "+ tax+"</br>");
+            document.write("Total Amount = "+(income+tax)+"</br>");
+        }
+        else if(income<=500000){
+            tax = income*(5/100);
+            document.write("Income = "+income+"</br>");
+            document.write("Tax % = 5 </br>");
+            document.write("Tax amount = "+ tax+"</br>");
+            document.write("Total Amount = "+(income+tax)+"</br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel_Room_Rent</title>
+</head>
+<body>
+    <h2>Hotel_Room_Rent_Calculation</h2>
+    <div class="d1">
+      <form method="" action="">
+        <label>Days</label><input type="number" id="ip1" /><br />
+        
+        <button type="submit" onclick="hotel()">Calculate</button>
+      </form>
+    </div>
+    <script>
+        function 
+        let days = document.getElementById("ip1").value;
+        if(days<=3){
+            let per_day_cost = 1000;
+            document.write("Number of Days = "+days+"</br>");
+            document.write("Per Day = 1000 </br>");
+            document.write("Total Rent Amount = "+(per_day_cost*days)+"</br>");
+        }
+        else if(days<=7){
+            let per_day_cost = 900;
+            document.write("Number of Days = "+days+"</br>");
+            document.write("Per Day = 900 </br>");
+            document.write("Total Rent Amount = "+(per_day_cost*days)+"</br>");
+            
+        }
+        else if(days>7){
+            let per_day_cost = 800;
+            document.write("Number of Days = "+days+"</br>");
+            document.write("Per Day = 800 </br>");
+            document.write("Total Rent Amount = "+(per_day_cost*days)+"</br>");
+            
+        }
+        else{
+            document.write("Invalide days value");
+        }
+    </script>
+</body>
+</html>

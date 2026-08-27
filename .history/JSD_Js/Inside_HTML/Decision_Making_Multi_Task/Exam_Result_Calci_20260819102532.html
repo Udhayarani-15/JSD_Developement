@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam_Result</title>
+  </head>
+  <body>
+    <h2>Exam_Result_Calculation</h2>
+    <div class="d1">
+      <form method="" action="">
+        <label>Tamil</label><input type="number" id="ip1" /><br />
+        <label>English</label><input type="number" id="ip2" /><br />
+        <label>Maths</label><input type="number" id="ip3" /><br />
+        <label>Science</label><input type="number" id="ip4" /><br />
+        <label>Social</label><input type="number" id="ip5" /><br />
+        <button type="submit" onclick="mark_cal()">Calculate</button>
+      </form>
+    </div>
+    <script>
+      function mark_cal() {
+        let tam = document.getElementById("ip1").value;
+        let eng = document.getElementById("ip2").value;
+        let mat = document.getElementById("ip3").value;
+        let sci = document.getElementById("ip4").value;
+        let soc = document.getElementById("ip5").value;
+        let tot = (tam + eng + mat + sci + soc;
+        let avg = tot / 5;
+        if (avg >= 50) {
+          document.write("Total Mark = " + tot + "</br>");
+          document.write("Average Mark = " + avg + "</br>");
+          document.write("Pass");
+        } else if (avg < 50) {
+          document.write("Total Mark = " + tot + "</br>");
+          document.write("Average Mark = " + avg + "</br>");
+          document.write("Fail");
+        } else {
+          document.write("Invalide Mark value");
+        }
+      }
+    </script>
+  </body>
+</html>

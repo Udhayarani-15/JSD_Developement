@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evenSumloop</title>
+</head>
+<body>
+
+    <script>
+        for(let i=1;i<=10;i++){
+           if(i%2==0){
+            document.write(i+" = Even</br></br>");
+           }
+           else{
+            document.write(i+" = Odd</br></br>");
+           }
+        }
+        document.write("</br><hr></br>");
+        let sum =0;
+        for(let i=1;i<=100;i++){
+           if(i%2==0){
+              sum+=i;
+           }
+        }
+        document.write(sum+" is the Sum of even numbers");
+        document.write("</br><hr></br>");
+        let count =0;
+        for(let i=1;i<=100;i++){
+           if(i%2==0){
+              count++;
+           }
+        }
+        document.write(count+" is the count of even numbers");
+        document.write("</br><hr></br>");
+        let mSum =0;
+        for(let i=100;i<=200;i++){
+           if(i%9==0){
+              mSum+=i;
+           }
+        }
+        document.write(mSum+" is the Sum of multiples of 9 ");
+        document.write("</br><hr></br>");
+        let  num = Number(document.write("ip1").value);
+        let psum=0;
+        function perfectFind(){
+            for(let i=1;)
+            if(num%i==0){
+               psum+=i;
+            }
+        }
+    </script>
+    <h1>Perfect Number</h1>
+    <input type="number" id="ip1" placeholder="enter the Number to check"><br><br>
+    <button type="submit" onclick="perfectFind()">Find</button>
+</body>
+</html>

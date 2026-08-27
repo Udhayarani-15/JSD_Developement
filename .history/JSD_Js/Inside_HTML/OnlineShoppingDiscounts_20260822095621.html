@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online_Shopping</title>
+
+    <style>
+      #ip2,
+      #ip3,
+      #ntBtn{
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Online_Shopping</h2>
+    <input type="number" id="ip1" placeholder="Enter Total shopping Amount" />
+    <button onclick="percent()">CheckAmount</button>
+    <br /><br />
+    <input type="number" id="ip2" placeholder="Premium Or Not" />
+    <button id="ntBtn" onclick="ageCali()">CheckPremium</button>
+    <br /><br />
+    <p id="p1"></p>
+
+    <script>
+      function percent() {
+        let  = Number(document.getElementById("ip1").value);
+        if (percentage >= 60) {
+          document.getElementById("ip2").style.visibility = "visible";
+          document.getElementById("ntBtn").style.visibility = "visible";
+          document.getElementById("p1").innerText =
+            "Percentage Eligible. Enter into Next Check.";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Not Eligible For College Admision";
+        }
+      }
+
+      function ageCali() {
+        let age = Number(document.getElementById("ip2").value);
+        if (age >= 21) {
+          document.getElementById("p1").innerText =
+            "Age Eligible . Admission Open";
+        } else {
+          document.getElementById("p1").innerText =
+            "Sorry, Age Not Eligible For Admission ";
+        }
+      }
+
+    </script>
+  </body>
+</html>

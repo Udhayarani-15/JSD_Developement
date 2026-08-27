@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile_Reacharge_Offer</title>
+</head>
+<body>
+    <h2>Mobile_Reacharge_Offer</h2>
+    <script>
+        let recharge = Number(prompt("Enter the Recharge amount"));
+        if(recharge>=200){
+            let cashback = recharge*(10/100);
+            document.write("Recharge Amount = "+recharge+"</br>");
+            document.write("Cashback = 10% </br>");
+            document.write("Cashback Amount = "+cashback+"</br>");
+        }
+        else if(recharge >=500){
+            let cashback = recharge*(15/100);
+            document.write("Recharge Amount = "+recharge+"</br>");
+            document.write("Cashback = 15% </br>");
+            document.write("Cashback Amount = "+cashback+"</br>");
+            
+        }
+         else if(recharge<200){
+            
+            document.write("Recharge Amount = "+recharge+"</br>");
+            document.write("Cashback = 15% </br>");
+            document.write("Cashback Amount = "+cashback+"</br>");
+            
+        }
+        else{
+            document.write("Invalide Income");
+        }
+    </script>
+</body>
+</html>

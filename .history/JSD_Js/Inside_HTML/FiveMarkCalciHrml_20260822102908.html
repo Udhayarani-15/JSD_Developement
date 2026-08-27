@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total_Avg_Mark</title>
+  </head>
+
+  <body>
+    <h2>Simple_Interest_Calci</h2>
+    <input type="number" id="ip1" placeholder="Enter Tamil Mark" />
+    <br /><br />
+    <input type="number" id="ip2" placeholder="Enter English Mark" /><br /><br/>
+    <input type="number" id="ip3" placeholder="Enter Maths Mark" /><br /><br>
+    <input type="number" id="ip4" placeholder="Enter Science Mark" /><br /><br/>
+    <input type="number" id="ip5" placeholder="Enter Social Mark" /><br /><br/>
+    <button id="ntBtn" onclick="siCalci()">Fine_AVG</button>
+    <br /><br />
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+      function siCalci() {
+        let tam = Number(document.getElementById("ip1").value);
+        let eng = Number(document.getElementById("ip2").value);
+        let mat = Number(document.getElementById("ip3").value);
+        let sci = Number(document.getElementById("ip4").value);
+        let soc = Number(document.getElementById("ip5").value);
+        let tot = tam+eng+mat+sci+soc;
+        let avg = tot/5;
+        if (tam != null && mat != null && sci != null && eng != null && soc != null) {
+          document.getElementById("p1").innerText = "TOTAL MARK = " + tot;
+          document.getElementById("p1").innerText = "AVERAGE MARK = " + avg;
+        } else {
+          document.getElementById("p1").innerText = "Fill All Fields";
+        }
+      }
+    </script>
+  </body>
+</html>
